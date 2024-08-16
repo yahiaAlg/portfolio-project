@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}About Me - Yahia Abderraouf{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row align-items-center mb-5">
+        <div class="col-lg-6 order-lg-2">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Yahia Abderraouf" class="img-fluid rounded-circle shadow-lg">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <h1 class="display-4 fw-bold mb-4">Hello, I'm <span class="text-primary">Yahia Abderraouf</span></h1>
+            <p class="lead mb-4">A passionate full-stack developer with a love for creating elegant solutions to complex problems. I believe in the power of technology to transform ideas into reality.</p>
+            <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Let's Connect</a>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-code fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title h4 mb-3">Code Craftsmanship</h3>
+                    <p class="card-text">I write clean, efficient, and maintainable code. My goal is to create software that not only works flawlessly but is also a joy for other developers to work with.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title h4 mb-3">Creative Problem Solving</h3>
+                    <p class="card-text">I thrive on challenges and approach each project with a creative mindset. I believe that the best solutions come from thinking outside the box.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                    <h3 class="card-title h4 mb-3">Collaborative Spirit</h3>
+                    <p class="card-text">I'm a team player who values open communication and mutual respect. I believe great things happen when we work together towards a common goal.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-lg-8 mx-auto">
+            <h2 class="display-6 text-center mb-4">My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 mb-0">Started Coding</h3>
+                        <p class="text-muted mb-2">2020</p>
+                        <p>From the moment I discovered my passion for programming, I dove headfirst into the world of code with boundless enthusiasm. I began by mastering low-level languages like C and C++, which laid the groundwork for my skills in developing console and desktop applications. My journey continued as I embraced Python UI libraries, such as tkinter, to create intuitive and user-friendly interfaces.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 mb-0">First Professional Project</h3>
+                        <p class="text-muted mb-2">2022</p>
+                        <p>I reached a significant milestone with my first professional project: a desktop stock management system crafted in Java. This project, designed with meticulous attention to UI/UX practices, served local computer electronics businesses and set a new standard for quality and innovation in the industry.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 mb-0">Embraced Full-Stack Development</h3>
+                        <p class="text-muted mb-2">2023</p>
+                        <p>Expanded my skills to become a full-stack developer, mastering both front-end (templating engines and languages like React, Django teplating language, Jinja2, Blade, Fetch and REST and FAST APIs, Bootstrap5, CSS3, SASS, WordPress, Threejs) and back-end technologies (SQL technologies like postgresql, oracle, mysql and NoSQL like MongoDB and RDF Knowledge Graphs, backend and Machine learning Frameworks like flask, django, laravel, python native, php MVC, Langchain, LlamaIndex, LiteLLM, SLIM Llm).As I evolved into a full-stack developer, I expanded my expertise to include both front-end and back-end technologies. I’ve become proficient with templating engines and languages like React, Django’s templating language, Jinja2, Blade, as well as tools like Fetch, REST, and FAST APIs. My front-end work is enhanced by Bootstrap 5, CSS3, SASS, WordPress, and Three.js. On the back-end, I have mastered SQL databases such as PostgreSQL, Oracle, and MySQL, along with NoSQL solutions like MongoDB and RDF Knowledge Graphs. My backend and machine learning skills include frameworks like Flask, Django, Laravel, and emerging tools like Langchain, LlamaIndex, LiteLLM, and SLIM LLM.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 mb-0">Today</h3>
+                        <p class="text-muted mb-2">Present</p>
+                        <p>lately I've also been deeply engaged in large-scale AI projects, focusing on machine learning, deep learning, and data warehousing automation. Utilizing Docker and advanced containerization technologies, I’ve contributed to cutting-edge AI-driven solutions. I am continuously learning and growing, always eager to embrace the next big project or challenge that comes my way.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <h2 class="display-6 mb-4">Let's Create Something Amazing Together</h2>
+        <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Get in Touch</a>
+    </div>
+</div>
+
+{% endblock %}

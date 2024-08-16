@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Habit tracking app with Python and MongoDB",
+    "thumbnail": "images/habit-tracking.png",
+    "hero_image": "images/habit-tracking-hero.png",
+    "categories": ["python", "web", "mongodb"],
+    "slug": "habit-tracking",
+    "prod": "https://google.dz",
+    "description": "A comprehensive habit tracking application built with Python and MongoDB, allowing users to set, track, and analyze their daily habits.",
+    "features": [
+      "Daily habit logging",
+      "Progress visualization",
+      "Habit streak tracking",
+      "Custom habit categories",
+      "Data export functionality"
+    ],
+    "technologies": ["Python", "Flask", "MongoDB", "HTML", "CSS", "JavaScript"],
+    "challenges": "Implementing an efficient data structure for habit tracking and providing meaningful insights from user data.",
+    "lessons_learned": "Gained deep understanding of NoSQL database design and improved skills in data visualization.",
+    "future_improvements": [
+      "Mobile app integration",
+      "Social sharing features",
+      "Machine learning for habit recommendations"
+    ],
+    "github_link": "https://github.com/yourusername/habit-tracker",
+    "date_completed": "2023-09-15",
+    "showcase-01":"images/showcase-01/habit-tracking.png",
+    "showcase-02":"images/showcase-02/habit-tracking.png"
+  },
+  {
+    "name": "Personal finance tracking app with React",
+    "thumbnail": "images/personal-finance.png",
+    "hero_image": "images/personal-finance-hero.png",
+    "categories": ["react", "javascript", "finance"],
+    "slug": "personal-tracking",
+    "prod": "https://google.dz",
+    "description": "A user-friendly personal finance tracking application built with React, helping users manage their expenses, income, and financial goals.",
+    "features": [
+      "Expense and income tracking",
+      "Budget creation and monitoring",
+      "Financial goal setting",
+      "Interactive charts and reports",
+      "Bank account integration"
+    ],
+    "technologies": [
+      "React",
+      "Redux",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Chart.js"
+    ],
+    "challenges": "Ensuring data security and privacy while providing a seamless user experience for financial management.",
+    "lessons_learned": "Improved skills in state management with Redux and learned best practices for handling sensitive financial data.",
+    "future_improvements": [
+      "AI-powered financial advice",
+      "Investment portfolio tracking",
+      "Multi-currency support"
+    ],
+    "github_link": "https://github.com/yourusername/finance-tracker",
+    "date_completed": "2024-01-20",
+    "showcase-01":"images/showcase-01/personal-tracking.png",
+    "showcase-02":"images/showcase-02/personal-tracking.png"
+  },
+  {
+    "name": "REST API docs with Postman and Swagger",
+    "thumbnail": "images/rest-api-docs.png",
+    "hero_image": "images/rest-api-docs-hero.png",
+    "categories": ["api", "postman", "swagger"],
+    "slug": "rest-api-docs",
+    "prod": "https://google.dz",
+    "description": "A comprehensive documentation project for a RESTful API using Postman and Swagger, providing clear and interactive API references for developers.",
+    "features": [
+      "Interactive API documentation",
+      "Request and response examples",
+      "Authentication details",
+      "Error handling information",
+      "API versioning documentation"
+    ],
+    "technologies": ["Postman", "Swagger/OpenAPI", "Markdown", "HTML", "CSS"],
+    "challenges": "Balancing the level of detail in documentation while maintaining clarity and ease of use for developers of varying experience levels.",
+    "lessons_learned": "Gained expertise in API documentation best practices and improved technical writing skills.",
+    "future_improvements": [
+      "Implement a CI/CD pipeline for documentation updates",
+      "Add multilingual support",
+      "Integrate with API testing suite"
+    ],
+    "github_link": "https://github.com/yourusername/api-docs",
+    "date_completed": "2024-03-05",
+    "showcase-01":"images/showcase-01/rest-api-docs.png",
+    "showcase-02":"images/showcase-02/rest-api-docs.png"
+  }
+]

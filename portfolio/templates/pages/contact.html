@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Me - Yahia Abderraouf{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <h1 class="display-4 text-center mb-5">Get in Touch</h1>
+    
+    <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <form id="contact-form" action="{{ url_for('contact') }}" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </form>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h2 class="h4 mb-4">Contact Information</h2>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                            123 Web Dev Street, Coder City, 12345
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope text-primary me-2"></i>
+                            <a href="mailto:yahialinus21alg@gmail.com">yahialinus21alg@gmail.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-phone text-primary me-2"></i>
+                            <a href="tel:+1234567890">+1 (234) 567-890</a>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="h5 mb-3">Connect with me</h3>
+                    <div class="d-flex mb-4">
+                        <a href="https://github.com/yahiaAlg/" class="me-3 text-dark fs-5"><i class="fab fa-github"></i></a>
+                        <a href="#" class="me-3 text-dark fs-5"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="me-3 text-dark fs-5"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-dark fs-5"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    
+                    <h3 class="h5 mb-3">Availability</h3>
+                    <p class="mb-0">I'm currently available for freelance work and exciting projects. Feel free to reach out!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid px-0 mt-5">
+    <div class="ratio ratio-21x9" style="height: 400px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.305935303!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1620764148948!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Here you would typically send the form data to your backend
+    // For demonstration, we'll just log to console and show an alert
+    console.log('Form submitted');
+    alert('Thank you for your message! I\'ll get back to you soon.');
+    this.reset();
+});
+</script>
+{% endblock %}

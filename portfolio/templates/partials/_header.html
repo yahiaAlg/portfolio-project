@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light shadow-sm">
+  <div class="container">
+    <a href="{{ url_for('index') }}" class="navbar-brand">
+      <img src="{{ url_for('static', filename='images/logo-main.png') }}" alt="Website Logo" height="60" width="
+      60" class="d-inline-block align-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a href="{{ url_for('index') }}" class="nav-link {% if request.endpoint == 'index' %}active{% endif %}">
+            <i class="fas fa-home me-1"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('about') }}" class="nav-link {% if request.endpoint == 'about' %}active{% endif %}">
+            <i class="fas fa-user me-1"></i> About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{ url_for('contact') }}" class="nav-link {% if request.endpoint == 'contact' %}active{% endif %}">
+            <i class="fas fa-envelope me-1"></i> Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
