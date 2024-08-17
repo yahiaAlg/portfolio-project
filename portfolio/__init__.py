@@ -3,7 +3,12 @@ from flask import Flask, abort, flash, redirect, render_template, request, url_f
 from dotenv import find_dotenv, load_dotenv
 import os
 import json
+from .email_utility import send_simple_email
+import uuid
+# Example usage:
+
 app = Flask(__name__)
+app.secret_key =  uuid.uuid4().hex
 load_dotenv(find_dotenv(), override=True)
 def check_database(projects):
     if "DATABASE_PATH" in os.environ:
@@ -73,11 +78,14 @@ def contact():
         email = request.form.get('email')
         subject = request.form.get('subject')
         message = request.form.get('message')
-        
+        send_simple_email("yahialinus21alg@gmail.com", "gxto expi xxup fwlk", "yahiameteor@gmail.com", subject, message + f" by {name}: {email}")
         # Here you would typically send an email or save to a database
+        with open("saved_messages.json", "a+") as msg_db:
+            json.dump(request.form, msg_db)
+            print("saved the message successfully!")
         # For now, we'll just print to console
         print(f"New message from {name} ({email}): {subject}")
-        print(message)
+        pprint(request.form)
         
         flash('Thank you for your message! I\'ll get back to you soon.', 'success')
         return redirect(url_for('contact'))
