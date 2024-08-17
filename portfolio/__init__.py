@@ -16,8 +16,8 @@ def check_database(projects):
             with open(os.environ["DATABASE_PATH"]) as db:
                 projects = json.load(db)
                 print("loaded database successfully")
-                pprint(projects)
-                print("the id of the db var",id(projects))
+                # pprint(projects)
+                # print("the id of the db var",id(projects))
                 return projects
         else:
             print("NO DATABASE FILE FOUND")
@@ -80,12 +80,24 @@ def contact():
         message = request.form.get('message')
         send_simple_email("yahialinus21alg@gmail.com", "gxto expi xxup fwlk", "yahiameteor@gmail.com", subject, message + f" by {name}: {email}")
         # Here you would typically send an email or save to a database
-        with open("saved_messages.json", "a+") as msg_db:
-            json.dump(request.form, msg_db)
-            print("saved the message successfully!")
+        saved_messages = []
+        if os.path.exists("saved_messages.json"):
+            # read the list of dictionaries from the json file
+            with open("saved_messages.json", "r") as sm:
+                saved_messages = json.load(sm)
+            with open("saved_messages.json", "w") as msg_db:
+                saved_messages.append(request.form)
+                # rewrite the latest list of dictionaries in the json saved messages
+                json.dump(saved_messages, msg_db)
+                print("saved the message successfully!")
+        else:
+            with open("saved_messages.json", "w") as msg_db:
+                saved_messages.append(request.form)
+                # rewrite the latest list of dictionaries in the json saved messages
+                json.dump(saved_messages, msg_db)
+                print("saved the message successfully!")
         # For now, we'll just print to console
         print(f"New message from {name} ({email}): {subject}")
-        pprint(request.form)
         
         flash('Thank you for your message! I\'ll get back to you soon.', 'success')
         return redirect(url_for('contact'))

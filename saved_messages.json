@@ -1,1 +1,20 @@
-{"name": "yahia", "email": "yahabdra21alg@gmail.com", "subject": "request course The complete Java Android App development Bootcamp", "message": "want to release it soon"}{"name": "yahia", "email": "yahabdra21alg@gmail.com", "subject": "request course The complete Java Android App development Bootcamp", "message": "want to release it soon"}
+[
+  {
+    "name": "yahia",
+    "email": "yahia@hotmail.com",
+    "subject": "request course The complete Java Android App development Bootcamp",
+    "message": "waiting for the reply"
+  },
+  {
+    "name": "marco polo",
+    "email": "marco@hotmail.com",
+    "subject": "python django deploy failure",
+    "message": "waiting for it to be fixed"
+  },
+  {
+    "name": "oussama",
+    "email": "oussama@gmail.com",
+    "subject": "something fishy about this one",
+    "message": "fix it please"
+  }
+]
