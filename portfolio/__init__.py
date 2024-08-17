@@ -1,5 +1,5 @@
 from pprint import pprint
-from flask import Flask, flash, redirect, render_template, request, url_for
+from flask import Flask, abort, flash, redirect, render_template, request, url_for
 from dotenv import find_dotenv, load_dotenv
 import os
 import json
@@ -91,7 +91,7 @@ def contact():
 @app.route("/project/<string:slug>")
 def project(slug):
     if slug not in projects_index:
-        return render_template("404.html"), 404
+        abort(404)
     
     current_project = projects_index[slug]
     related_projects = get_related_projects(slug)
@@ -102,4 +102,5 @@ def project(slug):
 
 @app.errorhandler(404)
 def page_not_found(e):
+    print("error happened: ",e)
     return render_template('404.html'), 404
