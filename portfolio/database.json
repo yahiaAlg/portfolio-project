@@ -92,20 +92,72 @@
   },
   {
     "name": "3D Portfolio Showcase with Three.js",
-    "thumbnail": "images/3d-portfolio.png",
+    "thumbnail": "images/3d-portfolio-hero.png",
     "hero_image": "images/3d-portfolio-hero.png",
-    "categories": ["threejs", "javascript", "3d"],
+    "categories": ["threejs", "javascript", "3d", "portfolio"],
     "slug": "3d-portfolio",
     "prod": "https://yahai-3d-portfolio.netlify.app/",
-    "description": "An immersive 3D portfolio website built using Three.js and Bootstrap, showcasing projects in a unique and interactive way."
+    "description": "An immersive 3D portfolio website built using Three.js and Bootstrap, showcasing projects in a unique and interactive way.",
+    "features": [
+      "Interactive 3D environment",
+      "Project showcase with 3D models",
+      "Smooth camera transitions",
+      "Responsive design with Bootstrap",
+      "Custom lighting and shaders"
+    ],
+    "technologies": [
+      "Three.js",
+      "JavaScript",
+      "WebGL",
+      "Bootstrap",
+      "HTML5",
+      "CSS3"
+    ],
+    "challenges": "Optimizing 3D performance for various devices and balancing visual appeal with usability in a 3D space.",
+    "lessons_learned": "Deepened understanding of 3D web technologies and improved skills in creating engaging user experiences.",
+    "future_improvements": [
+      "Add VR support for immersive viewing",
+      "Implement more interactive elements",
+      "Create a mobile-specific version with optimized 3D rendering"
+    ],
+    "github_link": "https://github.com/yahiaAlg/3dportfolio",
+    "date_completed": "2024-04-15",
+    "showcase-01": "images/showcase-01/3d-portfolio.png",
+    "showcase-02": "images/showcase-02/3d-portfolio.png"
   },
   {
     "name": "E-book Booking Web App with Email Form",
-    "thumbnail": "images/ebook-booking.png",
+    "thumbnail": "images/ebook-booking-hero.png",
     "hero_image": "images/ebook-booking-hero.png",
-    "categories": ["bootstrap5", "sass", "webapp"],
+    "categories": ["bootstrap5", "sass", "webapp", "email"],
     "slug": "ebook-booking",
     "prod": "https://yahia-ebook-bootstrap.netlify.app/",
-    "description": "A responsive web application for booking e-books, built with Bootstrap 5 and Sass, featuring an integrated email form for user notifications."
+    "description": "A responsive web application for booking e-books, built with Bootstrap 5 and Sass, featuring an integrated email form for user notifications.",
+    "features": [
+      "Responsive design using Bootstrap 5",
+      "Custom styling with Sass",
+      "E-book browsing and booking system",
+      "User account management",
+      "Email notification system for bookings and reminders"
+    ],
+    "technologies": [
+      "Bootstrap 5",
+      "Sass",
+      "JavaScript",
+      "PHP",
+      "MySQL",
+      "SMTP"
+    ],
+    "challenges": "Implementing a secure and efficient booking system while ensuring a smooth user experience across devices.",
+    "lessons_learned": "Gained proficiency in Bootstrap 5 and Sass, and improved back-end integration skills for form handling and email systems.",
+    "future_improvements": [
+      "Implement a recommendation system based on user preferences",
+      "Add social media sharing capabilities",
+      "Integrate with popular e-reader platforms"
+    ],
+    "github_link": "https://github.com/yahiaAlg/ebook-website",
+    "date_completed": "2024-05-20",
+    "showcase-01": "images/showcase-01/ebook-booking.png",
+    "showcase-02": "images/showcase-02/ebook-booking.png"
   }
 ]
