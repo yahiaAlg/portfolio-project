@@ -24,8 +24,8 @@
     ],
     "github_link": "https://github.com/yourusername/habit-tracker",
     "date_completed": "2023-09-15",
-    "showcase-01":"images/showcase-01/habit-tracking.png",
-    "showcase-02":"images/showcase-02/habit-tracking.png"
+    "showcase-01": "images/showcase-01/habit-tracking.png",
+    "showcase-02": "images/showcase-02/habit-tracking.png"
   },
   {
     "name": "Personal finance tracking app with React",
@@ -59,8 +59,8 @@
     ],
     "github_link": "https://github.com/yourusername/finance-tracker",
     "date_completed": "2024-01-20",
-    "showcase-01":"images/showcase-01/personal-tracking.png",
-    "showcase-02":"images/showcase-02/personal-tracking.png"
+    "showcase-01": "images/showcase-01/personal-tracking.png",
+    "showcase-02": "images/showcase-02/personal-tracking.png"
   },
   {
     "name": "REST API docs with Postman and Swagger",
@@ -87,7 +87,25 @@
     ],
     "github_link": "https://github.com/yourusername/api-docs",
     "date_completed": "2024-03-05",
-    "showcase-01":"images/showcase-01/rest-api-docs.png",
-    "showcase-02":"images/showcase-02/rest-api-docs.png"
+    "showcase-01": "images/showcase-01/rest-api-docs.png",
+    "showcase-02": "images/showcase-02/rest-api-docs.png"
+  },
+  {
+    "name": "3D Portfolio Showcase with Three.js",
+    "thumbnail": "images/3d-portfolio.png",
+    "hero_image": "images/3d-portfolio-hero.png",
+    "categories": ["threejs", "javascript", "3d"],
+    "slug": "3d-portfolio",
+    "prod": "https://yahai-3d-portfolio.netlify.app/",
+    "description": "An immersive 3D portfolio website built using Three.js and Bootstrap, showcasing projects in a unique and interactive way."
+  },
+  {
+    "name": "E-book Booking Web App with Email Form",
+    "thumbnail": "images/ebook-booking.png",
+    "hero_image": "images/ebook-booking-hero.png",
+    "categories": ["bootstrap5", "sass", "webapp"],
+    "slug": "ebook-booking",
+    "prod": "https://yahia-ebook-bootstrap.netlify.app/",
+    "description": "A responsive web application for booking e-books, built with Bootstrap 5 and Sass, featuring an integrated email form for user notifications."
   }
 ]
